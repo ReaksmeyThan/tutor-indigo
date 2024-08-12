@@ -146,54 +146,62 @@
 <!-- NEW IN INDIGO update footer -->
 
  <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <footer>
- <!-- Top Footer -->
-<div class="footer-top w3-container w3-red w3-center">
-    <div class="w3-row w3-black" style="max-width: 1600px; margin: 0 auto; display: flex;">
+
+<!-- Top Footer -->
+<div class="footer-top  flex-row d-flex justify-content-center align-items-center">
+
+    <div class="w3-row w3-content-top w3-black">
     
-        <!-- Left Side -->
-        <div class="w3-half text-white w3-indigo w3-left-align" style="flex: 1; padding: 20px;">
-            <h2 class="text-white">Learn and Grow</h2>
-            <p>
-                Our edX learning experience is grounded in cutting-edge cognitive science. With
-                more than two dozen distinct learning features to help you achieve your goals,
-                our approach follows three key principles.
-            </p>
+        <!-- Left Side --> 
+        <div class="w3-half left-side w3-container text-white  " >
 
-            <strong>Experience</strong>
-            <p> Learn new knowledge and skills in a variety of ways, from engaging video
-                lectures and dynamic graphics to data visualizations and interactive elements.
-            </p>
+            <div class="w3-left-align   w3-padding-64">
+                <h2 class="text-white">Learn and Grow</h2>
+                <p>
+                    Our edX learning experience is grounded in cutting-edge cognitive science. With
+                    more than two dozen distinct learning features to help you achieve your goals,
+                    our approach follows three key principles.
+                </p>
 
-            <strong>Practice</strong>
-            <p>
-                Demonstrating your knowledge is a critical part of learning. edX courses and
-                programs provide a space to practice with quizzes, open response assessments,
-                virtual environments, and more.
-            </p>
+                <strong>Experience</strong>
+                <p> Learn new knowledge and skills in a variety of ways, from engaging video
+                    lectures and dynamic graphics to data visualizations and interactive elements.
+                </p>
 
-            <strong>Apply</strong>
-            <p>
-                Learning on edX transforms how you think and what you can do, and translates
-                directly into the real world—immediately apply your new capabilities in the
-                context of your job.
-            </p>
+                <strong>Practice</strong>
+                <p>
+                    Demonstrating your knowledge is a critical part of learning. edX courses and
+                    programs provide a space to practice with quizzes, open response assessments,
+                    virtual environments, and more.
+                </p>
+
+                <strong>Apply</strong>
+                <p>
+                    Learning on edX transforms how you think and what you can do, and translates
+                    directly into the real world—immediately apply your new capabilities in the
+                    context of your job.
+                </p>
+            </div>
+    
         </div>
 
         <!-- Right Side -->
-        <div class="w3-half w3-center w3-green" style="flex: 1; display: flex; align-items: center; justify-content: center;">
-            <img src="${static.url('images/flower-white.png')}"  alt="Logo" style="max-height: 400px; max-width: 100%;">
+        <div class="w3-half right-side w3-container  w3-padding-64 " >
+            <img class="logo" src="${static.url('images/flower-white.png')}" alt="Logo" >
         </div>
+
     </div>
 </div>
+
 
 
     <!-- Bottom Footer -->
@@ -259,6 +267,8 @@
             
         </div>
     </div>
+
+
 </footer>
  
 % endif
@@ -271,6 +281,6 @@
 % endif
 % if footer_css_urls:
   % for url in footer_css_urls:
-    <link rel="stylesheet" type="text/css" href="${url}"></link>
+    <link rel="stylesheet" type="text/css" href="${url}">
   % endfor
 % endif

@@ -134,58 +134,79 @@
 //     }
 // }
 
+/////////////////////////////////
+.w3-content-top{
+    max-width: 1600px;
+    margin: 40 auto;
+
+}
 
 .footer-top {
     background: linear-gradient(135deg, #12492A, #2BAF65);
-    color: white;
-    padding: 40px 0;
+
+    .left-side,.right-side{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+
+    .right-side{
+
+        .logo{
+       
+            max-width: 50%;
+           
+         }
+    }
 
 
+    
 }
-.container-top ,.container-bot{
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1600px;
-  box-sizing: border-box;
-  font-family: $font-family-title;
-}
+// .container-top ,.container-bot{
+//   margin: 0 auto;
+//   padding: 0 15px;
+//   max-width: 1600px;
+//   box-sizing: border-box;
+//   font-family: $font-family-title;
+// }
 
-.footer-bottom {
-    background-color: #374236;
-    color: #ffffff;
-    padding: 20px 0;
-}
+// .footer-bottom {
+//     background-color: #374236;
+//     color: #ffffff;
+//     padding: 20px 0;
+// }
 
-.footer-bottom a {
-    color: #ffffff;
-    text-decoration: none;
-}
+// .footer-bottom a {
+//     color: #ffffff;
+//     text-decoration: none;
+// }
 
-.footer-bottom .social-icons a {
-    color: #ffffff;
-    font-size: 18px;
-    margin-right: 10px;
-}
+// .footer-bottom .social-icons a {
+//     color: #ffffff;
+//     font-size: 18px;
+//     margin-right: 10px;
+// }
 
-.social-icons a {
-    flex-wrap:wrap;
-    display: inline-block;
-    width: 50px; 
-    height: 50px; 
-    line-height: 50px;
-    border-radius: 50%;
-    background-color: #020202; 
-    color: #374236;
-    text-align: center;
-    margin-right: 10px;
-    font-size: 24px; 
-  }
+// .social-icons a {
+//     flex-wrap:wrap;
+//     display: inline-block;
+//     width: 50px; 
+//     height: 50px; 
+//     line-height: 50px;
+//     border-radius: 50%;
+//     background-color: #020202; 
+//     color: #374236;
+//     text-align: center;
+//     margin-right: 10px;
+//     font-size: 24px; 
+//   }
 
-  .social-icons a:hover {
-      background-color: #2BAF65;
-      color: #ffffff;
-  }
+//   .social-icons a:hover {
+//       background-color: #2BAF65;
+//       color: #ffffff;
+//   }
 
-.social-icons i {
-vertical-align: middle;
-}
+// .social-icons i {
+// vertical-align: middle;
+// }
